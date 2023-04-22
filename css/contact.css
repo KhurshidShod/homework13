@@ -1,0 +1,58 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../images/contactBG.png');
+    gap: 3rem;
+    padding: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.contact h1{
+    max-width: 750px;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 82px;
+}
+.contact p{
+    max-width: 850px;
+    font-size: 18px;
+    font: 400;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(85, 85, 85, 1);
+}
+.contact .inpAndBtn{
+    min-width: 250px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.contact .inpAndBtn input{
+    width: 70%;
+    height: 100%;
+    padding-left: 2rem;
+    font-family: 'Orbitron';
+    font-size: 18px;
+    border: none;
+}
+.contact .inpAndBtn input:focus{
+    outline: none;
+}
+.contact .inpAndBtn input::placeholder{
+    color: black;
+}
+.contact .inpAndBtn button{
+    width: 30%;
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--bgColor-blue);
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}

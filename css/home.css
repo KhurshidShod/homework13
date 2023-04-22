@@ -1,0 +1,107 @@
+.home{
+    background: linear-gradient(to right, var(--bgColor-black) 0% 50%, var(--bgColor-blue) 50%);
+}
+.home{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7.5rem;
+    padding-bottom: 7em;
+}
+.home-row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: row;
+}
+.home-row .col{
+    width: 50%;
+}
+.home-row .col:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 120px;
+}
+.home-row .col:first-child h5 img{
+    width: 32px;
+    height: 32px;
+}
+.home-row .col:first-child h1{
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 86px;
+    max-width: 656px;
+    position: relative;
+    color: white;
+}
+.home-row .col:first-child h1 svg{
+    position: absolute;
+    width: 75%;
+    top: 65%;
+    right: -40%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.home-row .col:first-child p{
+    max-width: 615px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(153, 153, 153, 1);
+}
+.home-row .col:first-child .homeButtons{
+    width: 100%;
+    display: flex;
+
+}
+.home-row .col:first-child .homeButtons button{
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.home-row .col:first-child .homeButtons button:hover{
+    background-color: var(--bgColor-blue);
+    transition: .1s linear;
+    -webkit-transition: .1s linear;
+    -moz-transition: .1s linear;
+    -ms-transition: .1s linear;
+    -o-transition: .1s linear;
+}
+.home-row .col:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home-row .col:last-child img{
+    width: 100%;
+}
+.home.light{
+    background: linear-gradient(to right, white 0% 50%, var(--bgColor-blue) 50%) !important;
+}
+.home.light .home-row .col:first-child h1{
+    color: black;
+}
+.home.light .home-row .col:first-child .homeButtons button{
+    color: black;
+}
+.home.light .home-row .col:first-child .homeButtons button:last-child:hover{
+    background-color: white;
+}

@@ -1,0 +1,260 @@
+/*----------------------------------Navbar----------------------------------*/
+@media (max-width: 885px) {
+    nav #navbar{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: -1000%;
+        left: 0;
+        transition: .1s linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 45px;
+        background-color: rgba(0, 0, 0, .9);
+        -webkit-transition: .1s linear;
+        -moz-transition: .1s linear;
+        -ms-transition: .1s linear;
+        -o-transition: .1s linear;
+}
+nav .navButtons{
+    display: none;
+}
+nav ul .navButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+nav.light ul li a{
+    color: black;
+}
+nav.light #navbar{
+    background-color: rgba(255, 255, 255, .9)
+}
+    #closeNav{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: white;
+    }
+    nav.light #closeNav{
+        color: black;
+    }
+    nav .navToggle{
+        display: block;
+    }
+}
+@media (max-width: 950px) {
+    nav .logo
+    {
+        margin-left: 1rem;
+    }
+    nav .navButtons{
+        margin-right: 1rem;
+    }
+    
+}
+@media (max-width: 500px) {
+    nav .navButtons button:first-child{
+        width: 35px;
+        height: 35px;
+    }
+    nav .navButtons button:first-child i{
+        font-size: 30px;
+    }
+    nav .navButtons button:last-child{
+        width: 120px;
+        height: 35px;
+        font-size: 15px;
+    }
+    nav .logo{
+        margin-left: 1rem;
+    }
+    nav .navToggle{
+        margin-right: 1rem;
+    }
+    nav .logo svg{
+        width: 175px;
+        height: 75px;
+    }
+    nav {
+        padding: 10px;
+    }
+    
+}
+/*----------------------------------Home----------------------------------*/
+@media (max-width: 1345px) {
+    .home-row .col:first-child h1 svg{
+        top: 75%;
+        left: 35%;
+    }
+}
+@media (max-width: 950px) {
+    .home-row .col:first-child h1{
+        font-size: 64px;
+    }
+}
+@media (max-width: 885px) {
+    .home{
+        padding-top: 0rem;
+    }
+    .home-row{
+        flex-direction: column;
+    }
+    .home-row .col:first-child{
+        width: 100%;
+        justify-content: start !important;
+        align-items: start;
+        min-height: 500px;
+    }
+    .home-row .col:first-child .homeButtons{
+        justify-content: center;
+    }
+    .home-row .col:first-child .homeButtons button:last-child:hover{
+        background-color: var(--bgColor-black);
+    }
+    .home-row .col:last-child{
+        height: 100%;
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .home-row .col:first-child h1{
+        font-size: 42px;
+        font-weight: 600;
+    }
+}
+/*----------------------------------SHOP----------------------------------*/
+@media (max-width: 500px) {
+    .shop .shop-row .text-col h1 {
+        font-size: 54px;
+    }
+    .shop .shop-row .text-col p {
+        font-size: 18px;
+    }
+}
+/*----------------------------------NEW ERA----------------------------------*/
+@media (max-width: 1345px) {
+    .newEra .newEra-row .text-col h1 {
+        font-size: 56px;
+    }
+    .newEra .newEra-row .text-col p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 885px) {
+    .newEra .newEra-row {
+        flex-direction: column;
+    }
+    .newEra-row .text-col, .newEra-row .video-col{
+        width: 100% !important;
+    }
+    .newEra-row .video-col{
+        padding: 0 !important;
+    }
+    .newEra-row .video-col video{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .newEra .newEra-row .text-col h1 {
+        font-size: 52px;
+    }
+    .newEra .newEra-row .text-col p {
+        font-size: 16px;
+    }
+}
+/*----------------------------------NEWS----------------------------------*/
+@media (max-width: 850px) {
+    .news .news-row .text-col{
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+    .news .news-row .text-col h1{
+        font-size: 50px !important;
+    }
+    .news .news-row .text-col .read-more button{
+       width: 150px !important;
+       height: 50px !important;
+    }
+    .news .news-row .news-col{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .news .news-row .news-col .news-large{
+        width: 100%;
+    }
+    .news-row .news-col .news-large .new h4{
+        font-size: 28px !important;
+    }
+    .news-row .news-col .news-small .new h5{
+        font-size: 18px !important;
+    }
+    .news .news-row .news-col .news-small{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .news .news-row .news-col .news-small{
+        flex-direction: column;
+    }
+    .news .news-row .news-col .news-small .new{
+        width: 100% !important;
+    }
+}
+/*----------------------------------SPONSORS----------------------------------*/
+@media (max-width: 500px) {
+    .sponsors h1 svg{
+        top: 105% !important;
+        left: 45% !important;
+        width: 250px;
+    }
+    .sponsors h1{
+        font-size: 40px !important;
+    }
+}
+/*----------------------------------PLAYINGS----------------------------------*/
+@media (max-width: 1000px) {
+    .playings .playings-card h1{
+        font-size: 38px !important;
+    }
+    .playings .playings-card svg{
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+@media (max-width: 800px) {
+    .playings {
+        flex-direction: column;
+    }
+    .playings .playings-card{
+        width: 100% !important;
+        min-height: 500px !important;
+    }
+}
+
+/*----------------------------------CONTACT----------------------------------*/
+
+@media (max-width: 700px) {
+    .contact h1{
+        font-size: 45px !important;
+    }
+    .contact .inpAndBtn{
+        width: 100% !important;
+    }
+    .contact .inpAndBtn button,
+    .contact .inpAndBtn input {
+        font-size: 14px !important;
+    }
+}
+/*----------------------------------CONTACT----------------------------------*/
+@media (max-width: 500px) {
+    .futureOfEsports{
+        width: 100% !important;
+    }
+}
