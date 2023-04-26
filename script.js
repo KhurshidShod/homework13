@@ -55,3 +55,6 @@ video.onclick = () => {
     video.pause();
     playVideoBtn.style.display = 'flex'
 }
+window.addEventListener("load", () => {
+    document.getElementById("loader").style.display = 'none'
+})
